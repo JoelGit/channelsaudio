@@ -1,0 +1,16 @@
+-> Accepts Safari Webpages and URLs
+
+-> Run Javascript on Webpage
+
+var result = [];
+
+const playButton = document.getElementsByClassName("glyphicon-play");
+
+const audioURL = location.protocol + "//" + location.hostname + ":" + location.port + playButton[0].parentNode.getAttribute("href") + "?vcodec=none&acodec=mp3";
+
+result = audioURL;
+
+// Call completion to finish
+completion(result);
+
+-> Open Javascript Result
